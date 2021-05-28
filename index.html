@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>3D Mazes</title>
+        <meta http-equiv="Cache-control" content="no-cache">  
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/sticky-footer.css" rel="stylesheet">     
+
+        <link rel="icon" href="img/logo.png">   
+        <style>
+            canvas{ background-color: rgb(15, 15, 15); width: 100%;}
+			textarea{ background-color: black; foreground-color: white;}
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+        </style>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+        <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    </head>
+    <body>
+    	<canvas id="renderCanvas" touch-action="none" style="touch-action: none;" tabindex=0></canvas>
+
+        <footer class="footer mt-auto py-3">
+            <div class="container text-center">
+                <a href="https://martinsuarezz.github.io/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+                        <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z"/>
+                    </svg>
+                    Other proyects
+                </a>
+            </div>
+        </footer>            	
+        <script src="js/mazeGenerator.js"></script>
+        <script src="js/index.js"></script>    
+
+    </body>
+</html>
